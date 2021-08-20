@@ -1,0 +1,555 @@
+<!doctype html>
+<html lang="en">
+{{page.header_top}}
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- faveicon -->
+    <link rel="icon" href="assets/images/faveicon.png" type="image/png" sizes="16x16">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <!-- ========google fonts ====== -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- ========font awesome ====== -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
+        integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA=="
+        crossorigin="anonymous" />
+
+
+
+    <!-- owl carousal -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+        integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+        integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.min.css"
+        integrity="sha512-C8Movfk6DU/H5PzarG0+Dv9MA9IZzvmQpO/3cIlGIflmtY3vIud07myMu4M/NTPJl8jmZtt/4mC9bAioMZBBdA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--  AOS  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    
+
+    <title>Eatme</title>
+</head>
+
+
+
+
+<body>
+    <div class="pre-loader">
+        <img src="{{ base_path ~ directory }}/images/loader.gif">
+    </div>
+    <div class="main-body-wrapper">
+        <!-- Main Navigation -->
+        <section class="main-navigation" id="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg ">
+                    <div class="row w-100 pd-aligned-center">
+
+                        <div class="col-lg-3 text-left logo-div-header">
+                            <a class="navbar-brand" href="#">E<span>at</span>me</a>
+                        </div>
+
+                        <div class="col-lg-9 text-right menu-div">
+
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="true" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon CrossButton"></span>
+                            </button>
+
+
+                            <div class="main-menu-wrap navbar-collapse collapse" id="navbarSupportedContent">
+
+                                <ul class="navbar-nav">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#home">Home </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#about">About Us</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#menu">Our Menu</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#testimonials">Testimonials</a>
+                                    </li>
+
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#contact">Contact Us</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </nav>
+            </div>
+        </section>
+
+        <!-- Main Banner -->
+        <section class="main-banner" id="home">
+            <div class="owl-carousel owl-theme" id="main-banner">
+
+                {# <div class="item" style="background-image: url('assets/images/banenr-1.jpg');"> #}
+                <div class="item" style="background-image: url('{{ base_path ~ directory }}/images/banenr-1.jpg');">
+                {# <img src="{{ base_path ~ directory }}/images/logo.png" alt="My Logo" /> #}
+
+                    <div class="dark-overlay-banner"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="main-banner-content ">
+                                <h2>Lorem Ipsum Doler </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quae nam
+                                    cupiditate
+                                    molestias? Sint modi est.
+                                </p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item" style="background-image: url('{{ base_path ~ directory }}/images/banenr-2.jpg');">
+                    <div class="dark-overlay-banner"></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="main-banner-content ">
+                                <h2>Lorem Ipsum Doler </h2>
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus quae nam
+                                    cupiditate
+                                    molestias? Sint modi est.
+                                </p>
+                                <a href="#">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </section>
+
+        <!-- Products Slider -->
+        <section class="dp-products-slider">
+            <img src="{{ base_path ~ directory }}/images/food-plate.jpg" class="about-decoration-image">
+            <div class="container">
+                <div class="owl-carousel owl-theme" id="product-banner" data-aos="fade-up" data-aos-delay="3500"
+                    data-aos-duration="800">
+
+                    <div class="item">
+                        <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-1.jpg);">
+                            <div class="dark-prod-card"></div>
+                            <h4 class="text-white">
+                                Lorem Ipsum
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-2.jpg);">
+                            <div class="dark-prod-card"></div>
+                            <h4 class="text-white">
+                                Lorem Ipsum
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-3.jpg);">
+                            <div class="dark-prod-card"></div>
+                            <h4 class="text-white">
+                                Lorem Ipsum
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-4.jpg);">
+                            <div class="dark-prod-card"></div>
+                            <h4 class="text-white">
+                                Lorem Ipsum
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-5.jpg);">
+                            <div class="dark-prod-card"></div>
+                            <h4 class="text-white">
+                                Lorem Ipsum
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-6.jpg);">
+                            <div class="dark-prod-card"></div>
+                            <h4 class="text-white">
+                                Lorem Ipsum
+                            </h4>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-7.jpg);">
+                            <div class="dark-prod-card"></div>
+                            <h4 class="text-white">
+                                Lorem Ipsum
+                            </h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="intro-sec pd-pad-set" id="about">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="pd-sec-heading" data-aos="fade-up" data-aos-duration="800">Disc<span>o</span>ver
+                        <span>O</span>ur Sto<span>r</span>y
+                    </h2>
+                    <p class="desc-para" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure facere, eos dicta,
+                        totam
+                        nisi voluptas ut explicabo quis, odio error vel illum dolorum facilis tenetur. Nostrum provident
+                        aperiam voluptatem. odio error vel illum dolorum facilis tenetur. Nostrum provident aperiam
+                        voluptatem!
+                    </p>
+                    <img src="{{ base_path ~ directory }}/images/about-image.png" class="about-main-image" data-aos="fade-up"
+                        data-aos-delay="800" data-aos-duration="1500">
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section class="our-menu-sec pd-pad-set" id="menu">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <h2 class="pd-sec-heading" data-aos="fade-up" data-aos-duration="800">O<span>u</span>r
+                            M<span>e</span>nu</h2>
+                        <p data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure facere, eos dicta,
+                            totam nisi voluptas ut explicabo quis, odio error vel illum dolorum facilis tenetur. Nostrum
+                            provident aperiam voluptatem. odio error vel illum dolorum facilis tenetur. Nostrum
+                            provident
+                            aperiam voluptatem!
+                        </p>
+                        <ul data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+                            <li>ipsum dolor sit amet consectetur, adipisicing elit</li>
+                            <li>sit amet consectetur</li>
+                            <li>Possimus quae nam cupiditate</li>
+                            <li>molestias? Sint modi est</li>
+                        </ul>
+                        <img src="{{ base_path ~ directory }}/images/plate-1.png" class="w-100 menu-left-image" data-aos="fade-up"
+                            data-aos-delay="600" data-aos-duration="800">
+                    </div>
+                    <div class="col-lg-6 menu-slider">
+                        <div class="owl-carousel owl-theme" id="menu-slider">
+                            <div class="item">
+                                <img src="{{ base_path ~ directory }}/images/menu-1.jpg" class="w-100">
+                            </div>
+                            <div class="item">
+                                <img src="{{ base_path ~ directory }}/images/menu-2.jpg" class="w-100">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-sec pd-pad-set" id="testimonials">
+            <img src="{{ base_path ~ directory }}/images/cutting-board.png" class="testimonial-decorate-image">
+            <img src="{{ base_path ~ directory }}/images/chilly.jpg" class="testimonial-decorate-image2">
+            <div class="container">
+                <div class="row text-center">
+                    <h2 class="pd-sec-heading" data-aos="fade-up" data-aos-duration="800">
+                        T<span>e</span>stim<span>o</span>nials</h2>
+                    <p class="desc-para" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure facere, eos dicta,
+                        totam nisi voluptas ut explicabo quis.
+                    </p>
+
+                    <div class="owl-carousel owl-theme" id="testimonials-slider" data-aos="fade-up" data-aos-delay="600"
+                        data-aos-duration="1500">
+                        <div class="item">
+                            <img src="{{ base_path ~ directory }}/images/testi-1.jpg" class="testimonial-image">
+                            <h5>Name Here</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus eveniet quas
+                                hic
+                                sit dicta veniam debitis laboriosam. Explicabo dolor autem vero. Distinctio dolor dolore
+                                dolorem cupiditate in voluptatibus quas.</p>
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ base_path ~ directory }}/images/testi-2.jpg" class="testimonial-image">
+                            <h5>Name Here</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus eveniet quas
+                                hic
+                                sit dicta veniam debitis laboriosam. Explicabo dolor autem vero. Distinctio dolor dolore
+                                dolorem cupiditate in voluptatibus quas.</p>
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ base_path ~ directory }}/images/testi-3.jpg" class="testimonial-image">
+                            <h5>Name Here</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus eveniet quas
+                                hic
+                                sit dicta veniam debitis laboriosam. Explicabo dolor autem vero. Distinctio dolor dolore
+                                dolorem cupiditate in voluptatibus quas.</p>
+                        </div>
+
+                        <div class="item">
+                            <img src="{{ base_path ~ directory }}/images/testi-4.jpg" class="testimonial-image">
+                            <h5>Name Here</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa repellendus eveniet quas
+                                hic
+                                sit dicta veniam debitis laboriosam. Explicabo dolor autem vero. Distinctio dolor dolore
+                                dolorem cupiditate in voluptatibus quas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-sec pd-pad-set" id="contact">
+            <img src="{{ base_path ~ directory }}/images/spoons.png" class="contact-decorate-image">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center mb-50">
+                        <h2 class="pd-sec-heading text-center" data-aos="fade-up" data-aos-duration="800">
+                            Con<span>a</span>ct u<span>s</span></h2>
+                        <p class="text-center desc-para" data-aos="fade-up" data-aos-delay="200"
+                            data-aos-duration="800">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure facere, eos dicta,
+                            totam nisi voluptas ut explicabo quis.
+                        </p>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="form-wrapper" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1500">
+                            <form>
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <label> Name</label>
+                                        <input type="text" name="name">
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label> Subject</label>
+                                        <input type="text" name="subject">
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label> Email</label>
+                                        <input type="email" name="email">
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label> Phone</label>
+                                        <input type="text" name="phone">
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <label> Message</label>
+                                        <textarea type="text" name="message"></textarea>
+
+                                    </div>
+
+                                    <div class="col-lg-12">
+                                        <button type="button" class="btn-submit">Submit</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+
+
+                    </div>
+                    <div class="col-lg-4 form-sec" data-aos="fade-up" data-aos-delay="600" data-aos-duration="1500">
+
+                        <div class="phone-box">
+                            <div>
+                                <h6>Call Us</h6>
+                                <a href="tel:+941234567">+9412 345 6789</a>
+                            </div>
+                        </div>
+
+                        <div class="phone-box">
+                            <div>
+                                <h6>Mail Us</h6>
+                                <a href="mailto:info@lorem.com">info@lorem.com</a>
+                            </div>
+                        </div>
+
+                        <div class="phone-box">
+                            <div>
+                                <h6>Find Us</h6>
+                                <p>128, Lorem ipsum, Doler sit.</p>
+                            </div>
+                        </div>
+
+                        <div class="phone-box">
+                            <div>
+                                <h6>Follow Us</h6>
+                                <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- map Section -->
+        <section class="g-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509916.957423575!2d-123.79759793610344!3d37.18430344877116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2slk!4v1623909438636!5m2!1sen!2slk"
+                height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-100"></iframe>
+        </section>
+
+        <!-- footer Section -->
+        <section class="footer-sec" style="background-image: url('assets/images/footer.jpg');">
+            <div class="bg-dark-overlay"></div>
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-12 text-center">
+                        <a class="navbar-brand" href="#">E<span>at</span>me</a>
+                        <p class="text-center desc-para ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. In,
+                            possimus esse!
+                            Qui natus deleniti reprehenderit quo distinctio deserunt reiciendis error eum magnam
+                            commodi.
+                            Dolore impedit doloribus quibusdam ipsa nulla praesentium.</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer-seperator">
+                <a class="up-arrow" href="#home"><i class="fas fa-chevron-up"></i></a>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 text-center">
+                        <div class="footer-social">
+                            <a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 text-center desktop-credit">
+                        <p class="footer-credit">&copy; 2021 all rights reserved.</p>
+                    </div>
+
+                    <div class="col-lg-4 text-center">
+                        <div class="footer-menu">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#menu">Menu</a>
+                            <a href="#testimonials">Testimonials</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-12 text-center mobile-credit">
+                        <p class="footer-credit">&copy; 2021 all rights reserved.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+
+
+
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+
+    <!-- Main Js -->
+    <script src="{{ base_path ~ directory }}/js/mysite.js"></script>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // aos initiate
+        AOS.init();
+        
+    </script>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha512-Ah5hWYPzDsVHf9i2EejFBFrG2ZAPmpu4ZJtW4MfSgpZacn+M9QHDt+Hd/wL1tEkk1UgbzqepJr6KnhZjFKB+0A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+</body>
+
+</html>
