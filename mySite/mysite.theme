@@ -133,3 +133,26 @@ function THEMENAME_preprocess(&$variables, $hook)
 {
     $variables['base_path'] = base_path();
 }
+
+/*
+
+function mySite_preprocess_node(&$variables){
+	$nids2 = \Drupal::entityQuery('node')->condition('type','recipes')->sort('created', 'DESC')->range(0, 3)->execute();
+	$nodesBlog =  \Drupal\node\Entity\Node::loadMultiple($nids2);
+	$variables['nodesBlog'] = $nodesBlog;
+}
+
+
+
+*/
+function mysite_preprocess_node(&$variable) {
+  if ($variable['node']->getType() === 'recipes') {
+    $variable['my_title'] = $variable['node']->field_my_title->value;
+    $variable['mytitle2'] = $variable['node']->title->value;
+
+  }
+}
+
+
+
+

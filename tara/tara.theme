@@ -56,6 +56,10 @@ function tara_preprocess_page(array &$variables) {
 function tara_preprocess_node(array &$variables) {
 	$variables['node_author_pic'] = theme_get_setting('node_author_pic', 'tara');
 	$variables['node_tags'] = theme_get_setting('node_tags', 'tara');
+
+		$nids2 = \Drupal::entityQuery('node')->condition('type','recipes')->sort('created', 'DESC')->range(0, 3)->execute();
+	$nodesBlog =  \Drupal\node\Entity\Node::loadMultiple($nids2);
+	$variables['nodesBlog'] = $nodesBlog;
 }
 
 /* *

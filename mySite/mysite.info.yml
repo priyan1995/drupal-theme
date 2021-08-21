@@ -10,7 +10,14 @@ core_version_requirement: ^8 || ^9
 libraries:
   - mysite/global-styling # Library for all global css. These css will be loaded on every pages.
 regions:
-   header_top: 'Header Top'
+  navbar: Navigation
+  land: Home
+  content: Page Content
+  footer: page Footer
+
+  #  header: 'Header Top'
+  #  content: 'Content'
+  #  footer: 'Footer'
   # site_branding: 'Site Branding'
   # primary_menu: 'Primary menu'
   # search_box: 'Full Page Search'

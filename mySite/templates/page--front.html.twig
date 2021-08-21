@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="en">
-{{page.header_top}}
+
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -65,6 +65,7 @@
         <!-- Main Navigation -->
         <section class="main-navigation" id="header">
             <div class="container">
+            {{ page.navbar }}
                 <nav class="navbar navbar-expand-lg ">
                     <div class="row w-100 pd-aligned-center">
 
@@ -113,6 +114,7 @@
             </div>
         </section>
 
+    {{ page.land }}
         <!-- Main Banner -->
         <section class="main-banner" id="home">
             <div class="owl-carousel owl-theme" id="main-banner">
@@ -167,25 +169,35 @@
                 <div class="owl-carousel owl-theme" id="product-banner" data-aos="fade-up" data-aos-delay="3500"
                     data-aos-duration="800">
 
-                    <div class="item">
+                    {# <div class="item">
                         <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-1.jpg);">
                             <div class="dark-prod-card"></div>
                             <h4 class="text-white">
                                 Lorem Ipsum
                             </h4>
                         </div>
-                    </div>
+                    </div> #}
 
+                    {# {%  for key1, value in nodesBlog %} #}
+                    
                     <div class="item">
-                        <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-2.jpg);">
+                        {# <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-2.jpg);">
                             <div class="dark-prod-card"></div>
                             <h4 class="text-white">
                                 Lorem Ipsum
                             </h4>
+                        </div> #}
+                          <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-2.jpg);">
+                            <div class="dark-prod-card"></div>
+                            <h4 class="text-white">
+                                {# { {  nodesBlog[key1].title.value  } } #}
+                            </h4>
                         </div>
                     </div>
 
-                    <div class="item">
+                    {# {% endfor %} #}
+
+                    {# <div class="item">
                         <div class="card-prod" style="background-image: url({{ base_path ~ directory }}/images/food-slider-3.jpg);">
                             <div class="dark-prod-card"></div>
                             <h4 class="text-white">
@@ -228,12 +240,14 @@
                                 Lorem Ipsum
                             </h4>
                         </div>
-                    </div>
+                    </div> #}
 
                 </div>
             </div>
         </section>
 
+
+    {{ page.content }}
         <!-- About Section -->
         <section class="intro-sec pd-pad-set" id="about">
             <div class="container">
@@ -241,6 +255,18 @@
                     <h2 class="pd-sec-heading" data-aos="fade-up" data-aos-duration="800">Disc<span>o</span>ver
                         <span>O</span>ur Sto<span>r</span>y
                     </h2>
+
+
+
+                    {# {% for key1, value in nodesBlog %}
+                        <h2>{{ nodesBlog[key1].title.value }}</h2>
+                    {% endfor %} #}
+
+
+                    
+
+
+
                     <p class="desc-para" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis iure facere, eos dicta,
                         totam
@@ -443,6 +469,8 @@
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6509916.957423575!2d-123.79759793610344!3d37.18430344877116!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb9fe5f285e3d%3A0x8b5109a227086f55!2sCalifornia%2C%20USA!5e0!3m2!1sen!2slk!4v1623909438636!5m2!1sen!2slk"
                 height="450" style="border:0;" allowfullscreen="" loading="lazy" class="w-100"></iframe>
         </section>
+
+    {{ page.footer }}
 
         <!-- footer Section -->
         <section class="footer-sec" style="background-image: url('assets/images/footer.jpg');">
